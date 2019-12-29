@@ -1,0 +1,90 @@
+﻿/************************************
+ * sprite.h
+ * Programmed by: 12161594 배은태
+ * Last Modified: 2019-12-18
+ ************************************/
+/* 8x8 스프라이트 데이터 정의 */
+#ifndef SPRITE_H_
+#define SPRITE_H_
+
+#define SPRITE_WIDTH	8
+#define SPRITE_HEIGHT	8
+
+const unsigned char sprWall[SPRITE_HEIGHT] PROGMEM = {
+	0b11100111,
+	0b11100111,
+	0b00000000,
+	0b11100111,
+	0b11100111,
+	0b00000000,
+	0b11100111,
+	0b11100111
+};
+
+const unsigned char sprBox[SPRITE_HEIGHT] PROGMEM = {
+	0b11111111,
+	0b11000011,
+	0b10100101,
+	0b10011001,
+	0b10011001,
+	0b10100101,
+	0b11000011,
+	0b11111111
+};
+
+const unsigned char sprGoal[SPRITE_HEIGHT] PROGMEM = {
+	0b00000000,
+	0b00010000,
+	0b00010000,
+	0b11111110,
+	0b01111100,
+	0b00111000,
+	0b01111100,
+	0b11000110
+};
+
+const unsigned char sprGoalBox[SPRITE_HEIGHT] PROGMEM = {
+	0b11111111,
+	0b10010001,
+	0b10010001,
+	0b11111101,
+	0b10111001,
+	0b10101001,
+	0b11101101,
+	0b11111111
+};
+
+const unsigned char sprLife[SPRITE_HEIGHT] PROGMEM = {
+	0b00000000,
+	0b01101110,
+	0b10010011,
+	0b10000011,
+	0b10000011,
+	0b01000110,
+	0b00101100,
+	0b00011000
+};
+
+const unsigned char sprPlayer[SPRITE_HEIGHT] PROGMEM = {
+	0b00011000,
+	0b00011100,
+	0b00011000,
+	0b00110000,
+	0b01011100,
+	0b00010000,
+	0b00101000,
+	0b00101000
+};
+
+const unsigned char sprPlayerDown[SPRITE_HEIGHT] PROGMEM = {
+	0b00000000,
+	0b00000000,
+	0b00000000,
+	0b00010000,
+	0b11001000,
+	0b00111111,
+	0b11010111,
+	0b00010010
+};
+
+#endif
